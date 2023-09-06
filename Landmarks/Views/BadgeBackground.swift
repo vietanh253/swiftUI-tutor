@@ -20,7 +20,7 @@ struct BadgeBackground: View {
             path.move(
                 to: CGPoint(
                     x: width * 0.95 + xOffset,
-                    y: height * 0.20 + HexagonParameters.adjustment
+                    y: height * (0.20 + HexagonParameters.adjustment)
                 )
             )
             
@@ -37,7 +37,7 @@ struct BadgeBackground: View {
                     y: height * segment.curve.y
                 ) , control: CGPoint(
         x: width * segment.control.x + xOffset,
-        y: height * segment.control.y
+                                    y: height * segment.control.y
                                   ))
                 
                 
